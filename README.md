@@ -13,7 +13,7 @@
   4. Discrete continuous column "n_steps"
   5. Nominal Column "description"
   6. Nominal Column "ingredients"
-  7. Discrete continuous column n_ingredients
+  7. Discrete continuous column "n_ingredients"
   8. Ordinal Column "average rating per recipe" (prediction variable)
   9. Continous column "number of calories"
   10. Continous column "total_fat (PDV)"
