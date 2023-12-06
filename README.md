@@ -29,10 +29,12 @@ The model has been created and fitted with test data (using train_test_split to 
 
 Training set:
   RMSE: 0.003989291158755953
+  
   R^2: 0.9999840855560507
 
 Testing set:
   RMSE: 1.2894403260466203
+  
   R^2: 0.5966294280530889
 
 From the look of these results, I would still say this basic model's performance is rather lacking. Despit attempting to prevent overfitting by using a RandomForest, it seems we still ended up doing so anyway by comparing results of R^2 between both sets. The RMSE between predictions is also signficantly larger between training and testing. (For reference, the entire point in rmse we averagely are off the mark by an entire point of the true rating, which isn't ideal for a small prediction range of 1-5.) These results aren't really that surprisng though since, as mentioned, we only did a bare minimum model with some minor transformations and using every column as it was without doing transformations intended for trying to logically predict a rating. In reality, we were really just trying to see if the columns in the form they currently are in would be sufficient to creating a strong model. That said, we still did perform a rather high estimate on test (for reference, expect test score personally was 0.5 or below) and our predictions do work in terms of just the training set, so now we have feature better estimators for our model and try to balance out the overfitting. In other words, we'll be sacrificing some of prediction accuracy in training for better prediction in testing for our final model, along with logically transform columns to our advantage (transforming columns in a way that would make sense to affecting or influencing a recipe's rating).
