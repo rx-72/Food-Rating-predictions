@@ -28,11 +28,14 @@ For now, we'll avoid using the nominal columns (since their values are lists whi
 The model has been created and fitted with test data (using train_test_split to divide the data between columns used for prediction and prediction y column for both training and testing datawith a 0.75 and 0.25 data split.), so we run RMSE and the R^2/score of the predictions for training and testing sets. We have the following results below:
 
 Training set:
+
   RMSE: 0.003989291158755953
   
   R^2: 0.9999840855560507
 
+
 Testing set:
+
   RMSE: 1.2894403260466203
   
   R^2: 0.5966294280530889
