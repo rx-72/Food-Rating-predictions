@@ -89,7 +89,7 @@ Our test statistic will be the absolute difference between scores of recipes wit
 
 After running the permutation test, we end with a calculated statistic of 0.543 along with the below distribution:
 
-<iframe src="alt_calories_scatter.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="score_significance.html" width=800 height=600 frameBorder=0></iframe>
 
 Therefore, we fail to reject the null hypothesis that the prediction score between recipes with high tag counts and recipes with low tags counts will be the same (meaning we fail to indicate a possibility that our model was biased towards one of these specific groups).
 
